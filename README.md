@@ -29,6 +29,16 @@ You have to install the following libraries:
 pip install numpy==1.26.4
 ```
 
+- Pandas
+```
+pip install pandas==2.2.2
+```
+
+- MatPlotLib
+```
+pip install matplotlib==3.8.0
+```
+
 - PyDiffMap
 ```
 pip install pydiffmap==0.2.0.1
@@ -36,31 +46,32 @@ pip install pydiffmap==0.2.0.1
 
 ### Running the Notebook Locally (Jupyter Notebook):
 
-Open Jupyter Notebook:
+1. Open Jupyter Notebook:
+- Open your terminal or command prompt
+- Navigate to the directory where your .ipynb file is located
+- Type jupyter notebook and press Enter
+- This will open Jupyter Notebook in your default web browser
 
-Open your terminal or command prompt.
-Navigate to the directory where your .ipynb file is located.
-Type jupyter notebook and press Enter.
-This will open Jupyter Notebook in your default web browser.
-Open the Notebook:
+2. Open the Notebook:
+- In the Jupyter Notebook interface, locate and click on your .ipynb file to open it
 
-In the Jupyter Notebook interface, locate and click on your .ipynb file to open it.
-Run the Notebook:
+3. Run the Notebook:
+- You can run individual cells or the entire notebook by using the "Run" button or keyboard shortcuts (Shift+Enter)
 
-You can run individual cells or the entire notebook by using the "Run" button or keyboard shortcuts (Shift+Enter).
-Running the Notebook on Google Colab:
+### Running the Notebook on Google Colab:
 
-Upload the Notebook:
+1. Upload the Notebook:
+- Go to  [Google Colab](https://colab.research.google.com/)
+- Click on "File" -> "Upload Notebook" and select your .ipynb file
 
-Go to Google Colab: https://colab.research.google.com/
-Click on "File" -> "Upload Notebook" and select your .ipynb file.
-Run the Notebook:
-
-Once uploaded, you can run the notebook cell by cell or all at once using the "Runtime" menu.
+2. Run the Notebook:
+- You can run the notebook cell by cell or all at once using the "Runtime" menu
 
 ## Usage
 
-
+To use the notebook, you must first run the imoprt cells and the cells from Data Preprocessing up to Plotting Functions.
+The following sections contain the experiments witch can be rerun or adjusted. 
+Each cell will display the results for the corresponding experiment, with plots and tables for each metric.
 
 ## Contributing
 
