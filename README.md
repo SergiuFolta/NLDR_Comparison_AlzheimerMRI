@@ -97,6 +97,11 @@ This week, we added a new notebook, 'NLDR_Comparison_Classification', which we w
 For now, we added some of the imports we need to use, we loaded our dataset and applyed the NLDR techniques on it.
 Apart from this, we updated some parts of the README file to talk about the newly introduced notebook and its contents.
 
+## Week 11 Update (Delayed from December)
+
+This week we created functions that will help us to train different ML models with the transformed data we get from the NLDR algorithms we applied.
+These functions gerenrate training/test splits of the data, predict based on an ML model, scale data (for SVM), load and train ML models, perform parameter tuning and train ML models on each data created with NLDR and plot the results (accuracy, precision, recall, f1-score).
+
 ## License
 
 This notebook is licensed under the [MIT License](./LICENSE). Please refer to the LICENSE file for more details.
