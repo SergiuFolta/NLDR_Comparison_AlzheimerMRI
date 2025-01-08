@@ -102,6 +102,11 @@ Apart from this, we updated some parts of the README file to talk about the newl
 This week we created functions that will help us to train different ML models with the transformed data we get from the NLDR algorithms we applied.
 These functions gerenrate training/test splits of the data, predict based on an ML model, scale data (for SVM), load and train ML models, perform parameter tuning and train ML models on each data created with NLDR and plot the results (accuracy, precision, recall, f1-score).
 
+## Week 13 Update
+
+This week we trained three ML Classification models (Logistic Regression, Support Vector Machines and Random Forest) on the dataset transformed by our NLDR techniques. 
+We plotted the accuracy, precision, recall and F1-score and desplayed the results in tables for easier analysis.
+
 ## License
 
 This notebook is licensed under the [MIT License](./LICENSE). Please refer to the LICENSE file for more details.
