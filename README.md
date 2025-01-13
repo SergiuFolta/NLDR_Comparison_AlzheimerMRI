@@ -1,8 +1,15 @@
 # NLDR Comparison on Alzheimer MRI
 
-This notebooks aim to compare the performance of four Nonlinear Dimensionality Reduction (NLDR) techniques: Isometric Mapping (Isomap), Locally Linear Embedding (LLE), Diffusion Maps and t-Distributed Stochastic Neighbor Embedding (t-SNE) on an Alzheimer MRI dataset and help improve the accuracy of classification.
-The algorithms are compared based on four clustering metrics: the Calinski-Harabasz Index, the Davies-Bouldin Index, the Fowlkes-Mallows Index and the Silhouette Score and on the training of a Machine Learning Classifier (Random Forest Classifier) and the assessment of the popular metrics: Accuracy, Precision, Recall and F1-score.
-The best results are further compared based on different classification machine learning algorithms.
+These notebooks aim to compare the performance of four Nonlinear Dimensionality Reduction (NLDR) techniques: Isometric Mapping (Isomap), Locally Linear Embedding (LLE), Diffusion Maps and t-Distributed Stochastic Neighbor Embedding (t-SNE) on an Alzheimer MRI dataset and help improve the accuracy of classification.
+
+The first notebook, "NLDR_Comparison_MRI" represents our first implementaion of the literature we studied. 
+We study the four algorithms previously mentioned to find the best parameters for our task of classification.
+The comparison is based on four clustering metrics: the Calinski-Harabasz Index, the Davies-Bouldin Index, the Fowlkes-Mallows Index and the Silhouette Score and on the training of a Machine Learning (ML) classifier (Random Forest Classifier) and the assessment of the popular metrics: Accuracy, Precision, Recall and F1-score.
+
+The second notebook, "NLDR_Comparison_Classification" represents our second implementation of the studied literature.
+Based on the results from the first notebook, we study the impact of NLDR techniques on five ML classification models: Logistic Regression (LR), Support Vector Machines (SVM), Random Forest (RF), Naive Bayes (NB) and k-nearest Neighbors (KNN).
+We will train these models on the Alzheimer MRI data that we reduce with the best results we previously got.
+In this way, we compare the five ML models and asses the impact that the NLDR techniques had on the classification of our data.
 
 ## Installation
 
@@ -40,12 +47,17 @@ pip install pandas==2.2.2
 pip install matplotlib==3.8.0
 ```
 
+- Sklearn
+```
+pip install scikit-learn==1.6.0
+```
+
 - PyDiffMap
 ```
 pip install pydiffmap==0.2.0.1
 ```
 
-### Running the Notebook Locally (Jupyter Notebook):
+### Running a Notebook Locally (Jupyter Notebook):
 
 1. Open Jupyter Notebook:
 - Open your terminal or command prompt
@@ -59,7 +71,7 @@ pip install pydiffmap==0.2.0.1
 3. Run the Notebook:
 - You can run individual cells or the entire notebook by using the "Run" button or keyboard shortcuts (Shift+Enter)
 
-### Running the Notebook on Google Colab:
+### Running a Notebook on Google Colab:
 
 1. Upload the Notebook:
 - Go to  [Google Colab](https://colab.research.google.com/)
@@ -73,12 +85,15 @@ pip install pydiffmap==0.2.0.1
 The first notebook, 'NLDR_Comparison_MRI' is used to compare the four NLDR algorithms based on the metrics previously mentioned.
 Its aim is to study which are the best parameters and which techinque has the best results.
 To use this notebook, you must first run the import cells and the cells from Data Preprocessing up to Plotting Functions.
-The following sections contain the experiments witch can be rerun or adjusted. 
+The following sections contain the experiments whitch can be rerun or adjusted. 
 Each cell will display the results for the corresponding experiment, with plots and tables for each metric.
 
 The second notebook, 'NLDR_Comparison_Classification' is used to further study the best NLDR results from the first notebook.
-Its aim is to train different classification algorithms on the reduced dataset and compare the results.
+Its aim is to train the five classification algorithms previously mentioned on the reduced dataset and compare the results.
 To use this notebook, you must first run the import cells, the cells from Data Preprocessing and those for applying the NLDR techniques.
+The following sections contain the experiments for each ML model.
+First, we perform parameter tuning and train the model with the best parameters, then, we plot the results and further display them as a table.
+These cells can be rerun or adjusted.
 
 ## Contributing
 
@@ -106,6 +121,12 @@ These functions gerenrate training/test splits of the data, predict based on an 
 
 This week we trained three ML Classification models (Logistic Regression, Support Vector Machines and Random Forest) on the dataset transformed by our NLDR techniques. 
 We plotted the accuracy, precision, recall and F1-score and desplayed the results in tables for easier analysis.
+
+## Week 14 Update
+
+This week we trained the remaining two ML Classification models (Naive Bayes and and k-nearest Neighbors) on the data we transformed with NLDR.
+Once again, we plotted the accuracy, precision, recall and F1-score and desplayed these values in a table.
+Lastly, we updated the README file with the remaining details of our experiments.
 
 ## License
 
