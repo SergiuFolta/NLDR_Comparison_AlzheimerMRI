@@ -130,6 +130,14 @@ This week we trained the remaining two ML Classification models (Naive Bayes and
 Once again, we plotted the accuracy, precision, recall and F1-score and desplayed these values in a table.
 Lastly, we updated the README file with the remaining details of our experiments.
 
+## Semester II
+
+### Plan
+
+- Try to update the NLDR_Comparison_MRI.ipynb with a function that explores different parameters (conditioned by the computing power);
+- Try to used more parameters and increase the cross validation in the NLDR_Comparison_Classification.ipynb (coditioned by the computing power);
+- Clean up the code, add meaningfull comments and correct the structure of the notebook.
+
 ## License
 
 This notebook is licensed under the [MIT License](./LICENSE). Please refer to the LICENSE file for more details.
