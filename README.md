@@ -106,23 +106,25 @@ We welcome contributions to this notebook! Here are some hints related to how yo
 - Push your branch to your forked2 repository.   
 - Submit a pull request to the main repository, describing your changes and addressing any potential issues.
 
-## Week 10 Update
+## Semester I
+
+### Week 10 Update
 
 This week, we added a new notebook, 'NLDR_Comparison_Classification', which we will use to implement the second set of exeriments from the literature.
 For now, we added some of the imports we need to use, we loaded our dataset and applyed the NLDR techniques on it.
 Apart from this, we updated some parts of the README file to talk about the newly introduced notebook and its contents.
 
-## Week 11 Update (Delayed from December)
+### Week 11 Update (Delayed from December)
 
 This week we created functions that will help us to train different ML models with the transformed data we get from the NLDR algorithms we applied.
 These functions gerenrate training/test splits of the data, predict based on an ML model, scale data (for SVM), load and train ML models, perform parameter tuning and train ML models on each data created with NLDR and plot the results (accuracy, precision, recall, f1-score).
 
-## Week 13 Update
+### Week 13 Update
 
 This week we trained three ML Classification models (Logistic Regression, Support Vector Machines and Random Forest) on the dataset transformed by our NLDR techniques. 
 We plotted the accuracy, precision, recall and F1-score and desplayed the results in tables for easier analysis.
 
-## Week 14 Update
+### Week 14 Update
 
 This week we trained the remaining two ML Classification models (Naive Bayes and and k-nearest Neighbors) on the data we transformed with NLDR.
 Once again, we plotted the accuracy, precision, recall and F1-score and desplayed these values in a table.
